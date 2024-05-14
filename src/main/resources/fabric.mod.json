@@ -8,8 +8,8 @@
 		"nathmm"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://modrinth.com/modpack/nathmpack",
+		"sources": "https://github.com/nathm-bit/nathmtils"
 	},
 	"license": "MIT",
 	"icon": "assets/nathmtils/icon.png",

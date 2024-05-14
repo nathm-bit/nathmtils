@@ -7,11 +7,9 @@ import java.io.FileReader;
 import java.lang.reflect.Type;
 import java.nio.file.Paths;
 import java.util.Map;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class ModConfig {
-    private static final String CONFIG_DIR = "config/nathm_utils";
+    private static final String CONFIG_DIR = "config/nathm-utils";
     private static final String CONFIG_FILE = "config.json";
     public static String customText;
 
@@ -21,7 +19,7 @@ public class ModConfig {
 
             // Check if the config file exists
             if (!configFile.exists()) {
-                nathmUtils.LOGGER.warn("Config file does not exist: " + configFile.getPath());
+                nathmUtils.LOGGER.warn("Config file does not exist: " + configFile.getPath() + ", using default text");
                 customText = "nathm's utils"; // Fallback text if no config file
                 return;
             }
