@@ -1,0 +1,12 @@
+{
+	"required": true,
+	"package": "net.fishwifi.nathmtils.mixin",
+	"compatibilityLevel": "JAVA_17",
+	"mixins": [
+		"ExampleMixin",
+		"MixinTitleScreen"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
