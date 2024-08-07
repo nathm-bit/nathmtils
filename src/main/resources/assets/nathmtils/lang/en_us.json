@@ -1,0 +1,12 @@
+{
+  "text.autoconfig.nathmUtils.title": "nathm's utils",
+
+  "text.autoconfig.nathmUtils.option.titleScreenText": "Title Screen Text",
+  "text.autoconfig.nathmUtils.option.titleScreenText.@Tooltip": "Text to show in the bottom left corner on the title screen",
+
+  "text.autoconfig.nathmUtils.option.showPlayerTags": "Show Player Tags",
+  "text.autoconfig.nathmUtils.option.showPlayerTags.@Tooltip": "Show custom tags before player names",
+
+  "text.autoconfig.nathmUtils.option.playerTagDataURL": "Player Tag Data URL",
+  "text.autoconfig.nathmUtils.option.playerTagDataURL.@Tooltip": "URL to fetch player tags from"
+}

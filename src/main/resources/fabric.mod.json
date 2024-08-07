@@ -3,9 +3,9 @@
 	"id": "nathmtils",
 	"version": "${version}",
 	"name": "nathm's utils",
-	"description": "Additional settings for the nathm's utils modpack",
+	"description": "Additional features for the nathm's utils modpack",
 	"authors": [
-		"nathmm"
+		"nathm"
 	],
 	"contact": {
 		"homepage": "https://modrinth.com/modpack/nathmpack",
@@ -15,11 +15,11 @@
 	"icon": "assets/nathmtils/icon.png",
 	"environment": "*",
 	"entrypoints": {
-		"main": [
+		"client": [
 			"net.fishwifi.nathmtils.nathmUtils"
 		],
-		"fabric-datagen": [
-			"net.fishwifi.nathmtils.nathmUtilsDataGenerator"
+		"modmenu": [
+			"net.fishwifi.nathmtils.config.ModMenuCompat"
 		]
 	},
 	"mixins": [
@@ -27,11 +27,11 @@
 	],
 	"depends": {
 		"fabricloader": ">=0.15.11",
-		"minecraft": "~1.20.4",
+		"minecraft": "~1.20.6",
 		"java": ">=17",
 		"fabric-api": "*"
 	},
 	"suggests": {
-		"another-mod": "*"
+		"modmenu": "*"
 	}
 }

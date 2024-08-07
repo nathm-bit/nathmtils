@@ -1,0 +1,10 @@
+{
+  "tags": {
+    "tag1": "\u2001§6\uD83D\uDD25",
+    "tag2": "§3[tag2]"
+  },
+  "players": {
+    "tag1": ["93289b2f-bab9-4afd-b9a7-a696f304f68c", "e59eb6f4-1901-4431-a1ab-5d9189d67210"],
+    "tag2": ["4be16eae-e19f-4b7f-b060-d30c0c48d0ec", "8d0124ed-dcb2-4e20-a658-20e1a0ef580d"]
+  }
+}
