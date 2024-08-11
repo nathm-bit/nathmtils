@@ -74,7 +74,7 @@ public class TagManager {
                                 for (Map.Entry<String, Object> entry : tagData.entrySet()) {
                                     if (entry.getValue() instanceof String) {
                                         tags.put(entry.getKey(), (String) entry.getValue());
-                                    }
+                                                }
                                 }
                             }
 
@@ -94,7 +94,7 @@ public class TagManager {
                             LOGGER.info("Loaded player data: {}", players);
                         }
                     } catch (JsonSyntaxException e) {
-                        LOGGER.error("The server returned invalid json!: {}", response);
+                        LOGGER.error("The server returned invalid json! {}", response);
                         throw e;
                     }
                 }
