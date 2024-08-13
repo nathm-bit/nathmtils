@@ -12,6 +12,7 @@ import java.io.InputStreamReader;
 import java.io.InputStream;
 import java.lang.reflect.Type;
 import java.net.HttpURLConnection;
+import java.net.URI;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
@@ -38,7 +39,9 @@ public class TagManager {
             HttpURLConnection connection = null;
 
             try {
-                URL url = new URL(config.getPlayerTagDataURL());
+                URI uri = new URI(config.getPlayerTagDataURL());
+                URL url = uri.toURL();
+
                 LOGGER.info("Attempting to fetch tags from {}", url);
                 connection = (HttpURLConnection) url.openConnection();
                 connection.setRequestMethod("GET");
@@ -74,7 +77,7 @@ public class TagManager {
                                 for (Map.Entry<String, Object> entry : tagData.entrySet()) {
                                     if (entry.getValue() instanceof String) {
                                         tags.put(entry.getKey(), (String) entry.getValue());
-                                                }
+                                    }
                                 }
                             }
 
